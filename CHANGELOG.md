@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.0.1](https://github.com/brad-jones/dk8slock/compare/d54685c5b2a71782056a2719e89b64ca9b1c0745..v0.0.1) - 2025-01-21
+#### Bug Fixes
+- **(publish)** remove changelog so repo is not dirty - ([d54685c](https://github.com/brad-jones/dk8slock/commit/d54685c5b2a71782056a2719e89b64ca9b1c0745)) - [@brad-jones](https://github.com/brad-jones)
+
+- - -
+
 ## [v0.1.0](https://github.com/brad-jones/dk8slock/compare/2262838c2f5a437abba62e819a803181c2476e4e..v0.1.0) - 2025-01-21
 #### Features
 - first automated release - ([2262838](https://github.com/brad-jones/dk8slock/commit/2262838c2f5a437abba62e819a803181c2476e4e)) - [@brad-jones](https://github.com/brad-jones)
