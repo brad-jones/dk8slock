@@ -2,6 +2,12 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.1.2](https://github.com/brad-jones/dk8slock/compare/d85f6ac2b248697d7a561ed6f389461c9938976e..v0.1.2) - 2025-01-21
+#### Bug Fixes
+- **(readme)** we will not be supporting node or any other runtime for now - ([d85f6ac](https://github.com/brad-jones/dk8slock/commit/d85f6ac2b248697d7a561ed6f389461c9938976e)) - [@brad-jones](https://github.com/brad-jones)
+
+- - -
+
 ## [v0.1.1](https://github.com/brad-jones/dk8slock/compare/d54685c5b2a71782056a2719e89b64ca9b1c0745..v0.1.1) - 2025-01-21
 #### Bug Fixes
 - **(publish)** remove changelog so repo is not dirty - ([d54685c](https://github.com/brad-jones/dk8slock/commit/d54685c5b2a71782056a2719e89b64ca9b1c0745)) - [@brad-jones](https://github.com/brad-jones)
