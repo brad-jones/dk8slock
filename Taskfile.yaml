@@ -40,4 +40,5 @@ tasks:
       - git push && git push --tags
       - cog changelog --at v{{ .VERSION }} > GITHUB_CHANGELOG.md
       - gh release create v{{ .VERSION }} -F GITHUB_CHANGELOG.md
+      - rm GITHUB_CHANGELOG.md
       - deno publish
