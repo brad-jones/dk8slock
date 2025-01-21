@@ -1,7 +1,7 @@
 {
   "name": "@brad-jones/dk8slock",
   "exports": "./src/mod.ts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "publish": {
     "include": [
       "src/**/*.ts",
