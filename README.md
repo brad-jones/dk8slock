@@ -20,3 +20,14 @@ async function contentiousFunc() {
   // Anything you do here is guaranteed to be only executing by a single worker.
 }
 ```
+
+## Known Issues
+
+- `@cloudydeno/kubernetes-client` leaks resources, it doesn't seem to close HttpClients.
+
+  ```
+  error: Leaks detected:
+  - An HTTP client was created during the test, but not closed during the test. Close the HTTP client by calling `httpClient.close()`.
+  ```
+
+  Hence why our tests currently set `sanitizeResources: false`
