@@ -23,6 +23,9 @@ jobs:
           pixi-version: v0.40.2
           activate-environment: true
 
+      - name: 🧪 Run Tests
+        run: task test
+
       - name: 🚀 Publish Release
         run: cog bump --auto
         env:

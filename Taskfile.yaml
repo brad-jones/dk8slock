@@ -18,6 +18,17 @@ tasks:
       - git config core.editor "code --wait"
       - git config commit.template "$PWD/.gitmsgtpl"
 
+  test:
+    desc: Runs some simple end to end tests against a kind cluster
+    env:
+      KUBECONFIG: ./.kube/config
+    cmds:
+      - kind create cluster
+      - defer: rm -rf ./.kube
+      - defer: kind delete cluster
+      - kubectl cluster-info
+      - deno test -A ./tests
+
   package:
     desc: This is triggered by cog as a pre_bump_hook to generate all the final publishable artifacts
     requires:
