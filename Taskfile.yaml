@@ -17,3 +17,27 @@ tasks:
       - git config pull.rebase true
       - git config core.editor "code --wait"
       - git config commit.template "$PWD/.gitmsgtpl"
+
+  package:
+    desc: This is triggered by cog as a pre_bump_hook to generate all the final publishable artifacts
+    requires:
+      vars:
+        - VERSION
+    cmds:
+      - >-
+          echo '
+            const config = JSON.parse(Deno.readTextFileSync("deno.json"));
+            config.version = "{{.VERSION}}";
+            Deno.writeTextFileSync("deno.json", JSON.stringify(config, null, 2));
+          ' | deno run -A -
+
+  publish:
+    desc: This is triggered by cog as a post_bump_hook to publish all the final publishable artifacts
+    requires:
+      vars:
+        - VERSION
+    cmds:
+      - git push && git push --tags
+      - cog changelog --at v{{ .VERSION }} > GITHUB_CHANGELOG.md
+      - gh release create v{{ .VERSION }} -F GITHUB_CHANGELOG.md
+      - deno publish

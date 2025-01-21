@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    permissions:
+      id-token: write
+      contents: write
+      packages: write
+      attestations: write
+    steps:
+      - name: ⬇️ Git Checkout
+        uses: actions/checkout@v4
+
+      - name: ⚙️ Install pixi env
+        uses: prefix-dev/setup-pixi@v0.8.1
+        with:
+          pixi-version: v0.40.2
+          activate-environment: true
+
+      - name: 🚀 Publish Release
+        run: cog bump --auto
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
