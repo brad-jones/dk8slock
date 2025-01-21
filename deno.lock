@@ -1,0 +1,61 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@cloudydeno/kubernetes-apis@~0.5.2": "0.5.2",
+    "jsr:@cloudydeno/kubernetes-client@0.7.3": "0.7.3",
+    "jsr:@cloudydeno/kubernetes-client@~0.7.3": "0.7.3",
+    "jsr:@mesqueeb/case-anything@^3.1.0": "3.1.0",
+    "jsr:@std/bytes@^1.0.2": "1.0.4",
+    "jsr:@std/path@1.0.6": "1.0.6",
+    "jsr:@std/streams@1.0.5": "1.0.5",
+    "jsr:@std/yaml@1.0.5": "1.0.5",
+    "npm:dayjs@^1.11.13": "1.11.13"
+  },
+  "jsr": {
+    "@cloudydeno/kubernetes-apis@0.5.2": {
+      "integrity": "f5fd9c94987f54fde72c6103fa0663ccb71cb6e328e7be44af1d59145adb31ee",
+      "dependencies": [
+        "jsr:@cloudydeno/kubernetes-client@0.7.3"
+      ]
+    },
+    "@cloudydeno/kubernetes-client@0.7.3": {
+      "integrity": "eb9fd12ac6c58e7995cc2d41a72ea9d153970900e184a5bd6fa2f2b19da5ec1a",
+      "dependencies": [
+        "jsr:@std/path",
+        "jsr:@std/streams",
+        "jsr:@std/yaml"
+      ]
+    },
+    "@mesqueeb/case-anything@3.1.0": {
+      "integrity": "0e463b752f95dbdfa42c97b0e60911170fd8206508522fffc23a9e83d63bb4c2"
+    },
+    "@std/bytes@1.0.4": {
+      "integrity": "11a0debe522707c95c7b7ef89b478c13fb1583a7cfb9a85674cd2cc2e3a28abc"
+    },
+    "@std/path@1.0.6": {
+      "integrity": "ab2c55f902b380cf28e0eec501b4906e4c1960d13f00e11cfbcd21de15f18fed"
+    },
+    "@std/streams@1.0.5": {
+      "integrity": "74e5c73d7d68eeab0d7fba3b05cbee3ba4ac5ae37c5f4e675f67e62f8f53edc4",
+      "dependencies": [
+        "jsr:@std/bytes"
+      ]
+    },
+    "@std/yaml@1.0.5": {
+      "integrity": "71ba3d334305ee2149391931508b2c293a8490f94a337eef3a09cade1a2a2742"
+    }
+  },
+  "npm": {
+    "dayjs@1.11.13": {
+      "integrity": "sha512-oaMBel6gjolK862uaPQOVTA7q3TZhuSvuMQAAglQDOWYO9A91IrAOUJEyKVlqJlHE0vq5p5UXxzdPfMH/x6xNg=="
+    }
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@cloudydeno/kubernetes-apis@~0.5.2",
+      "jsr:@cloudydeno/kubernetes-client@~0.7.3",
+      "jsr:@mesqueeb/case-anything@^3.1.0",
+      "npm:dayjs@^1.11.13"
+    ]
+  }
+}

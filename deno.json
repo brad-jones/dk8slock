@@ -1,0 +1,10 @@
+{
+  "name": "@brad-jones/dk8slock",
+  "exports": "./src/mod.ts",
+  "imports": {
+    "@cloudydeno/kubernetes-apis": "jsr:@cloudydeno/kubernetes-apis@^0.5.2",
+    "@cloudydeno/kubernetes-client": "jsr:@cloudydeno/kubernetes-client@^0.7.3",
+    "@mesqueeb/case-anything": "jsr:@mesqueeb/case-anything@^3.1.0",
+    "dayjs": "npm:dayjs@^1.11.13"
+  }
+}
