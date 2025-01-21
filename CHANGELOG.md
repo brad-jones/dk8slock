@@ -2,6 +2,15 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.1.1](https://github.com/brad-jones/dk8slock/compare/d54685c5b2a71782056a2719e89b64ca9b1c0745..v0.1.1) - 2025-01-21
+#### Bug Fixes
+- **(publish)** remove changelog so repo is not dirty - ([d54685c](https://github.com/brad-jones/dk8slock/commit/d54685c5b2a71782056a2719e89b64ca9b1c0745)) - [@brad-jones](https://github.com/brad-jones)
+- git fetch depth needs to be set so cog can compare tags - ([f3d6a15](https://github.com/brad-jones/dk8slock/commit/f3d6a1532f1b8b05491ec28e1d8601d7dfa1b145)) - [@brad-jones](https://github.com/brad-jones)
+#### Miscellaneous Chores
+- **(version)** v0.0.1 - ([159fd2d](https://github.com/brad-jones/dk8slock/commit/159fd2d84b67ffd51e46c4ec6bbfd2a244a9cc0e)) - github-actions[bot]
+
+- - -
+
 ## [v0.0.1](https://github.com/brad-jones/dk8slock/compare/d54685c5b2a71782056a2719e89b64ca9b1c0745..v0.0.1) - 2025-01-21
 #### Bug Fixes
 - **(publish)** remove changelog so repo is not dirty - ([d54685c](https://github.com/brad-jones/dk8slock/commit/d54685c5b2a71782056a2719e89b64ca9b1c0745)) - [@brad-jones](https://github.com/brad-jones)
