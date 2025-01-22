@@ -49,7 +49,7 @@ async function doSomeWork(instance: string) {
   runningWorkers.pop();
 }
 
-Deno.test("disposeable lock should prevent concurrent running", async () => {
+Deno.test("disposeable lock should prevent concurrent running", { sanitizeResources: false }, async () => {
   const completedJobs: string[] = [];
   const jobs = Promise.all([doSomeWork("foo"), doSomeWork("bar")]);
   const job = (async () => {

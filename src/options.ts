@@ -5,7 +5,7 @@ export interface LockOptions {
   namespace?: string;
 
   /**
-   * Any string that can identify the consumer of the lock.
+   * Any string that can identify the holder of the lock.
    *
    * Default: `Deno.hostname()`
    */

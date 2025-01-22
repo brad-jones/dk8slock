@@ -1,3 +1,6 @@
+.kube/
+publish/
+node_modules/
 
 # pixi environments
 .pixi

@@ -27,7 +27,9 @@ tasks:
       - defer: rm -rf ./.kube
       - defer: kind delete cluster
       - kubectl cluster-info
-      - deno test -A ./tests
+      - deno test -A ./tests/e2e.test.ts
+      - deno run -A ./scripts/dnt.ts ./tests/node/package 0.0.0
+      - cd ./tests/node && npm install && KUBECONFIG="../../.kube/config" node --import tsx --test tests.mts && cd -
 
   package:
     desc: This is triggered by cog as a pre_bump_hook to generate all the final publishable artifacts
@@ -35,6 +37,7 @@ tasks:
       vars:
         - VERSION
     cmds:
+      - deno run -A ./scripts/dnt.ts ./publish/node/package {{.VERSION}}
       - >-
           echo '
             const config = JSON.parse(Deno.readTextFileSync("deno.json"));
@@ -48,6 +51,7 @@ tasks:
       vars:
         - VERSION
     cmds:
+      - cd ./publish/node/package && npm publish --provenance --access public && cd -
       - git push && git push --tags
       - cog changelog --at v{{ .VERSION }} > GITHUB_CHANGELOG.md
       - gh release create v{{ .VERSION }} -F GITHUB_CHANGELOG.md

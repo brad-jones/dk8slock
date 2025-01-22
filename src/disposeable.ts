@@ -1,6 +1,6 @@
 import { lock } from "./lock.ts";
-import type { LockOptions } from "./options.ts";
 import { unlock } from "./unlock.ts";
+import type { LockOptions } from "./options.ts";
 
 /**
  * Using the power of Disposeable we offer a lock & unlock in one.

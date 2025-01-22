@@ -1,6 +1,7 @@
 {
   "deno.enable": true,
   "deno.cacheOnSave": true,
+  "deno.disablePaths": ["./tests/node"],
   "editor.rulers": [80, 120],
   "editor.renderWhitespace": "boundary",
   "editor.formatOnPaste": true,

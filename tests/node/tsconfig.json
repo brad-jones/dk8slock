@@ -1,0 +1,12 @@
+{
+  "compilerOptions": {
+    "strict": true,
+    "module": "ESNext",
+    "target": "ES2022",
+    "moduleResolution": "nodenext"
+  },
+  "exclude": [
+    "node_modules",
+    "**/node_modules/*"
+  ]
+}
