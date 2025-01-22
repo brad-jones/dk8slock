@@ -2,6 +2,20 @@
 All notable changes to this project will be documented in this file. See [conventional commits](https://www.conventionalcommits.org/) for commit guidelines.
 
 - - -
+## [v0.2.0](https://github.com/brad-jones/dk8slock/compare/d0fb322f609c6374b303028ca326373b9d29d04c..v0.2.0) - 2025-01-22
+#### Continuous Integration
+- **(npm)** fix up npmrc path - ([90822a5](https://github.com/brad-jones/dk8slock/commit/90822a5e39d6c4852bf7a07f4ecb0923c27f79ef)) - [@brad-jones](https://github.com/brad-jones)
+#### Documentation
+- **(readme)** added known issues section - ([fed7f9d](https://github.com/brad-jones/dk8slock/commit/fed7f9d260427dde13511d6f6e92469c0dc7e6f9)) - [@brad-jones](https://github.com/brad-jones)
+#### Features
+- added nodejs support via dnt - ([151566a](https://github.com/brad-jones/dk8slock/commit/151566abc9a20aa066a0e2a6b562a16e7fb793c1)) - [@brad-jones](https://github.com/brad-jones)
+#### Miscellaneous Chores
+- added eduitorconfig file - ([d0fb322](https://github.com/brad-jones/dk8slock/commit/d0fb322f609c6374b303028ca326373b9d29d04c)) - [@brad-jones](https://github.com/brad-jones)
+#### Tests
+- **(e2e)** added some basic tests that run against a kind cluster - ([ec6199a](https://github.com/brad-jones/dk8slock/commit/ec6199a0a4f1b59cd908ba94b37342deadcca30e)) - [@brad-jones](https://github.com/brad-jones)
+
+- - -
+
 ## [v0.1.2](https://github.com/brad-jones/dk8slock/compare/d85f6ac2b248697d7a561ed6f389461c9938976e..v0.1.2) - 2025-01-21
 #### Bug Fixes
 - **(readme)** we will not be supporting node or any other runtime for now - ([d85f6ac](https://github.com/brad-jones/dk8slock/commit/d85f6ac2b248697d7a561ed6f389461c9938976e)) - [@brad-jones](https://github.com/brad-jones)
