@@ -50,6 +50,8 @@ tasks:
     requires:
       vars:
         - VERSION
+    env:
+      NPM_CONFIG_USERCONFIG: "{{.ROOT_DIR}}/.npmrc"
     cmds:
       - cd ./publish/node/package && npm publish --provenance --access public && cd -
       - git push && git push --tags
