@@ -10,13 +10,13 @@ environments:
       - conda: https://conda.anaconda.org/conda-forge/linux-64/_openmp_mutex-4.5-2_gnu.tar.bz2
       - conda: https://conda.anaconda.org/conda-forge/linux-64/ca-certificates-2024.12.14-hbcca054_0.conda
       - conda: https://repo.prefix.dev/brads-forge/linux-64/cocogitto-6.2.0-h81b34b9_2.conda
-      - conda: https://repo.prefix.dev/brads-forge/linux-64/deno-2.1.6-h81b34b9_2.conda
+      - conda: https://repo.prefix.dev/brads-forge/linux-64/deno-2.1.7-h81b34b9_2.conda
       - conda: https://repo.prefix.dev/brads-forge/linux-64/dprint-0.48.0-h81b34b9_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/go-shfmt-3.10.0-ha770c72_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/icu-75.1-he02047a_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/kubernetes-client-1.32.1-h6d84b8b_0.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/kubernetes-kind-0.26.0-ha770c72_0.conda
-      - conda: https://repo.prefix.dev/brads-forge/linux-64/lefthook-1.10.8-h81b34b9_2.conda
+      - conda: https://repo.prefix.dev/brads-forge/linux-64/lefthook-1.10.10-h81b34b9_2.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-14.2.0-h77fa898_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-ng-14.2.0-h69a702a_1.conda
       - conda: https://conda.anaconda.org/conda-forge/linux-64/libgomp-14.2.0-h77fa898_1.conda
@@ -59,11 +59,11 @@ packages:
   license: MIT
   size: 2860349
   timestamp: 1734165589549
-- conda: https://repo.prefix.dev/brads-forge/linux-64/deno-2.1.6-h81b34b9_2.conda
-  sha256: 00cd0fc6b29abc2c1c83d3531faeccb650e13777e2a4cc6302c51354dc0b9856
+- conda: https://repo.prefix.dev/brads-forge/linux-64/deno-2.1.7-h81b34b9_2.conda
+  sha256: 47a90cd72cb49a7498ca0758e20fe730a504a900cc424bf1548e84d1b4d45629
   license: MIT
-  size: 43037140
-  timestamp: 1737085180481
+  size: 42946024
+  timestamp: 1737517260770
 - conda: https://repo.prefix.dev/brads-forge/linux-64/dprint-0.48.0-h81b34b9_2.conda
   sha256: 7166091baac950afae5141da0cab667c1c208ba84754f30a98454221aa077231
   license: MIT
@@ -72,6 +72,8 @@ packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/go-shfmt-3.10.0-ha770c72_1.conda
   sha256: ea7147daa65d844a5b798a18a08e5453703d8f50e6321022e2783453400edba9
   md5: 72d86c9809f2ceefa6f6327c5125db72
+  arch: x86_64
+  platform: linux
   license: BSD-3-Clause
   license_family: BSD
   size: 1614418
@@ -103,15 +105,17 @@ packages:
 - conda: https://conda.anaconda.org/conda-forge/linux-64/kubernetes-kind-0.26.0-ha770c72_0.conda
   sha256: e03e5e9f0d6e549cb700955e9440dbbd33f9a3c20c7eee850c28c88909b6139a
   md5: 340e3938c90e5d595d7e42721eb29f5c
+  arch: x86_64
+  platform: linux
   license: Apache-2.0
   license_family: APACHE
   size: 3406926
   timestamp: 1734442055132
-- conda: https://repo.prefix.dev/brads-forge/linux-64/lefthook-1.10.8-h81b34b9_2.conda
-  sha256: 057a09e4809393d8ea789470bddca945aa091a92a4762d7773cc1a5465abc663
+- conda: https://repo.prefix.dev/brads-forge/linux-64/lefthook-1.10.10-h81b34b9_2.conda
+  sha256: c146a7f36507594256d9a3fecb745516da481fd09b3c7dcfd7a8de9c9a4c266e
   license: MIT
-  size: 4980286
-  timestamp: 1737171469201
+  size: 4981742
+  timestamp: 1737517233725
 - conda: https://conda.anaconda.org/conda-forge/linux-64/libgcc-14.2.0-h77fa898_1.conda
   sha256: 53eb8a79365e58849e7b1a068d31f4f9e718dc938d6f2c03e960345739a03569
   md5: 3cb76c3f10d3bc7f1105b2fc9db984df
@@ -195,6 +199,8 @@ packages:
   - libzlib >=1.3.1,<2.0a0
   - openssl >=3.4.0,<4.0a0
   - zlib
+  arch: x86_64
+  platform: linux
   license: MIT
   license_family: MIT
   size: 21796933

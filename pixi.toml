@@ -12,10 +12,10 @@ cmd = "code ."
 
 [dependencies]
 cocogitto = ">=6.2.0,<7"
-deno = ">=2.1.6,<2.2"
+deno = ">=2.1.7,<2.2"
 dprint = ">=0.48.0,<0.49"
 go-shfmt = ">=3.10.0,<4"
-lefthook = ">=1.10.8,<2"
+lefthook = ">=1.10.10,<2"
 task = ">=3.41.0,<4"
 nodejs = ">=22.12.0,<22.13"
 kubernetes-kind = ">=0.26.0,<0.27"
